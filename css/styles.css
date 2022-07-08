@@ -1,0 +1,172 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+html {
+  font-size: 62.5%;
+}
+body {
+  background-color: #272727;
+  color: #fff;
+  width: 100%;
+  height: 100vh;
+}
+header {
+  position: relative;
+  background-color: #7b7b7b;
+  height: 15vh;
+  text-align: center;
+}
+h1 {
+  font-size: 6rem;
+  line-height: 15vh;
+}
+.best {
+  font-size: 2.5rem;
+  font-weight: bold;
+  position: absolute;
+  top: 20%;
+  right: 5%;
+}
+.best-count {
+  font-size: 2.5rem;
+}
+.blue {
+  color: #004b97;
+}
+.red {
+  color: #a23400;
+}
+main {
+  width: 100%;
+  height: 85vh;
+  display: flex;
+}
+.play {
+  position: absolute;
+  top: 55%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 3.2rem;
+  font-weight: bold;
+  padding: 2rem 3rem;
+  user-select: none;
+}
+.fa-caret-right {
+  font-size: 3.2rem;
+  padding-right: 1.4rem;
+}
+section {
+  height: 85vh;
+  position: relative;
+}
+.left {
+  width: 40%;
+  border-right: #7b7b7b solid 1rem;
+}
+.number-box {
+  position: absolute;
+  left: 50%;
+  top: 15%;
+  transform: translate(-50%, 0);
+  display: flex;
+}
+.number {
+  border: #fff solid 0.1rem;
+  font-size: 3.4rem;
+  padding: 0 1.2rem;
+  user-select: none;
+}
+.number:hover {
+  cursor: default;
+}
+.input-box {
+  position: absolute;
+  left: 50%;
+  top: 30%;
+  transform: translate(-50%, 0);
+}
+.info {
+  white-space: nowrap;
+  font-size: 1.8rem;
+  color: yellow;
+  text-align: center;
+}
+.guess {
+  display: block;
+  width: 20rem;
+  font-size: 2.5rem;
+  padding: 2rem 0;
+  text-align: center;
+  background-color: #7b7b7b;
+  border: #fff solid 0.5rem;
+  color: #fff;
+  font-weight: bold;
+  margin: auto;
+  margin-bottom: 2rem;
+}
+.btn {
+  display: block;
+  font-size: 2rem;
+  font-weight: bold;
+  padding: 1.5rem 1rem;
+  margin: auto;
+  user-select: none;
+}
+.check {
+  margin-bottom: 2rem;
+}
+.right {
+  width: 60%;
+  height: 85vh;
+}
+.right-block {
+  height: 95%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-items: center;
+  margin: auto 0;
+}
+.item-block {
+  border: #fff solid 0.3rem;
+  font-size: 2.8rem;
+  padding: 1.4rem;
+  margin: 1rem;
+  display: inline-block;
+  text-align: center;
+}
+@media screen and (max-width: 768px) {
+  html {
+    font-size: calc(62.5% / 1.3);
+  }
+  .best {
+    top: 5%;
+    right: 4%;
+  }
+  .number-box {
+    flex-wrap: wrap;
+    top: 6%;
+  }
+  .input-box {
+    top: 40%;
+  }
+  .info {
+    font-size: 1rem;
+  }
+  .guess {
+    width: 12rem;
+    padding: 2rem 0;
+  }
+  .right-block {
+    width: 80%;
+  }
+  .item-block {
+    font-size: 1.6rem;
+    padding: 1rem;
+  }
+}

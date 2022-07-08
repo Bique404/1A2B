@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>1A2B</title>
+    <link rel="stylesheet" href="css/styles.css" type="text/css" />
+    <script
+      src="https://kit.fontawesome.com/743a7ad558.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <header>
+      <h1>1 <span class="blue">A</span> 2 <span class="red">B</span></h1>
+      <p class="best" style="display: none">
+        最佳次數: <span class="best-count">0</span>
+      </p>
+    </header>
+    <main>
+      <button class="play"><i class="fas fa-caret-right"></i>Play !!</button>
+      <section class="left" style="display: none">
+        <div class="number-box">
+          <span onclick="changeColor(this)" class="number" style="color: #fff"
+            >0</span
+          >
+          <span onclick="changeColor(this)" class="number" style="color: #fff"
+            >1</span
+          >
+          <span onclick="changeColor(this)" class="number" style="color: #fff"
+            >2</span
+          >
+          <span onclick="changeColor(this)" class="number" style="color: #fff"
+            >3</span
+          >
+          <span onclick="changeColor(this)" class="number" style="color: #fff"
+            >4</span
+          >
+          <span onclick="changeColor(this)" class="number" style="color: #fff"
+            >5</span
+          >
+          <span onclick="changeColor(this)" class="number" style="color: #fff"
+            >6</span
+          >
+          <span onclick="changeColor(this)" class="number" style="color: #fff"
+            >7</span
+          >
+          <span onclick="changeColor(this)" class="number" style="color: #fff"
+            >8</span
+          >
+          <span onclick="changeColor(this)" class="number" style="color: #fff"
+            >9</span
+          >
+        </div>
+        <div class="input-box">
+          <p class="info">*請輸入0~9不重複4位數字*</p>
+          <input
+            type="number"
+            class="guess"
+            oninput="if(value.length > 4)value=value.slice(0,4);if(value<0)value=0 "
+          />
+          <button class="btn check">Check!</button>
+          <button class="btn restart">Restart</button>
+        </div>
+      </section>
+      <section class="right" style="display: none">
+        <div class="right-block"></div>
+      </section>
+    </main>
+    <script src="script.js"></script>
+  </body>
+</html>
