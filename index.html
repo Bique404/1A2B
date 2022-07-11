@@ -21,45 +21,70 @@
     <main>
       <button class="play"><i class="fas fa-caret-right"></i>Play !!</button>
       <section class="left" style="display: none">
-        <div class="number-box">
-          <span onclick="changeColor(this)" class="number" style="color: #fff"
-            >0</span
-          >
-          <span onclick="changeColor(this)" class="number" style="color: #fff"
-            >1</span
-          >
-          <span onclick="changeColor(this)" class="number" style="color: #fff"
-            >2</span
-          >
-          <span onclick="changeColor(this)" class="number" style="color: #fff"
-            >3</span
-          >
-          <span onclick="changeColor(this)" class="number" style="color: #fff"
-            >4</span
-          >
-          <span onclick="changeColor(this)" class="number" style="color: #fff"
-            >5</span
-          >
-          <span onclick="changeColor(this)" class="number" style="color: #fff"
-            >6</span
-          >
-          <span onclick="changeColor(this)" class="number" style="color: #fff"
-            >7</span
-          >
-          <span onclick="changeColor(this)" class="number" style="color: #fff"
-            >8</span
-          >
-          <span onclick="changeColor(this)" class="number" style="color: #fff"
-            >9</span
-          >
-        </div>
         <div class="input-box">
+          <div class="number-box">
+            <span onclick="changeColor(this)" class="number" style="color: #fff"
+              >0</span
+            >
+            <span onclick="changeColor(this)" class="number" style="color: #fff"
+              >1</span
+            >
+            <span onclick="changeColor(this)" class="number" style="color: #fff"
+              >2</span
+            >
+            <span onclick="changeColor(this)" class="number" style="color: #fff"
+              >3</span
+            >
+            <span onclick="changeColor(this)" class="number" style="color: #fff"
+              >4</span
+            >
+            <span onclick="changeColor(this)" class="number" style="color: #fff"
+              >5</span
+            >
+            <span onclick="changeColor(this)" class="number" style="color: #fff"
+              >6</span
+            >
+            <span onclick="changeColor(this)" class="number" style="color: #fff"
+              >7</span
+            >
+            <span onclick="changeColor(this)" class="number" style="color: #fff"
+              >8</span
+            >
+            <span onclick="changeColor(this)" class="number" style="color: #fff"
+              >9</span
+            >
+          </div>
+
           <p class="info">*請輸入0~9不重複4位數字*</p>
           <input
             type="number"
-            class="guess"
+            class="answer"
             oninput="if(value.length > 4)value=value.slice(0,4);if(value<0)value=0 "
           />
+          <div class="key-box" id="box">
+            <button onclick="inputNumber(this)" class="key" id="one">1</button>
+            <button onclick="inputNumber(this)" class="key" id="two">2</button>
+            <button onclick="inputNumber(this)" class="key" id="three">
+              3
+            </button>
+            <button onclick="inputNumber(this)" class="key" id="four">4</button>
+            <button onclick="inputNumber(this)" class="key" id="five">5</button>
+            <button onclick="inputNumber(this)" class="key" id="six">6</button>
+            <button onclick="inputNumber(this)" class="key" id="seven">
+              7
+            </button>
+            <button onclick="inputNumber(this)" class="key" id="eight">
+              8
+            </button>
+            <button onclick="inputNumber(this)" class="key" id="nine">9</button>
+            <button onclick="inputNumber(this)" class="key" id="re">
+              <i class="fas fa-redo"></i>
+            </button>
+            <button onclick="inputNumber(this)" class="key" id="zero">0</button>
+            <button onclick="inputNumber(this)" class="key" id="backspace">
+              <i class="fas fa-backspace"></i>
+            </button>
+          </div>
           <button class="btn check">Check!</button>
           <button class="btn restart">Restart</button>
         </div>

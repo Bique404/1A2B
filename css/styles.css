@@ -62,48 +62,64 @@ section {
 }
 .left {
   width: 40%;
-  border-right: #7b7b7b solid 1rem;
+  border-right: #7b7b7b solid 0.6rem;
 }
-.number-box {
+.input-box {
   position: absolute;
   left: 50%;
-  top: 15%;
-  transform: translate(-50%, 0);
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+.number-box {
+  margin-bottom: 2rem;
   display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
 }
 .number {
   border: #fff solid 0.1rem;
   font-size: 3.4rem;
   padding: 0 1.2rem;
   user-select: none;
+  width: fit-content;
 }
 .number:hover {
   cursor: default;
-}
-.input-box {
-  position: absolute;
-  left: 50%;
-  top: 30%;
-  transform: translate(-50%, 0);
 }
 .info {
   white-space: nowrap;
   font-size: 1.8rem;
   color: yellow;
   text-align: center;
+  margin-bottom: 0.4rem;
 }
-.guess {
+.answer {
   display: block;
   width: 20rem;
   font-size: 2.5rem;
   padding: 2rem 0;
   text-align: center;
   background-color: #7b7b7b;
-  border: #fff solid 0.5rem;
+  border: #fff solid 0.4rem;
   color: #fff;
   font-weight: bold;
   margin: auto;
   margin-bottom: 2rem;
+}
+.key-box {
+  width: 80%;
+  margin: auto;
+  display: flex;
+  flex-wrap: wrap;
+}
+.key {
+  flex: 0 0 32%;
+  font-size: 2.5rem;
+  font-weight: bold;
+  padding: 0.4rem;
+  margin: auto;
+  margin-bottom: 0.4rem;
+  user-select: none;
 }
 .btn {
   display: block;
@@ -114,7 +130,7 @@ section {
   user-select: none;
 }
 .check {
-  margin-bottom: 2rem;
+  margin: 2rem auto;
 }
 .right {
   width: 60%;
@@ -148,19 +164,12 @@ section {
     top: 5%;
     right: 4%;
   }
-  .number-box {
-    flex-wrap: wrap;
-    top: 6%;
-  }
-  .input-box {
-    top: 40%;
-  }
   .info {
     font-size: 1rem;
   }
-  .guess {
+  .answer {
     width: 12rem;
-    padding: 2rem 0;
+    padding: 1.5rem 0;
   }
   .right-block {
     width: 90%;
@@ -168,5 +177,9 @@ section {
   .item-block {
     font-size: 2.5rem;
     padding: 1rem;
+  }
+  .number {
+    font-size: 3rem;
+    padding: 0 1rem;
   }
 }
