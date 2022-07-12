@@ -48,9 +48,7 @@ main {
   left: 50%;
   transform: translate(-50%, -50%);
   font-size: 3.2rem;
-  font-weight: bold;
   padding: 2rem 3rem;
-  user-select: none;
 }
 .fa-caret-right {
   font-size: 3.2rem;
@@ -65,6 +63,7 @@ section {
   border-right: #7b7b7b solid 0.6rem;
 }
 .input-box {
+  width: 22rem;
   position: absolute;
   left: 50%;
   top: 50%;
@@ -113,24 +112,34 @@ section {
   flex-wrap: wrap;
 }
 .key {
-  flex: 0 0 32%;
+  width: 27%;
   font-size: 2.5rem;
-  font-weight: bold;
   padding: 0.4rem;
-  margin: auto;
-  margin-bottom: 0.4rem;
   user-select: none;
 }
 .btn {
   display: block;
-  font-size: 2rem;
   font-weight: bold;
-  padding: 1.5rem 1rem;
   margin: auto;
+  border: #000 solid 0.1rem;
+  background-color: #fff;
+  color: #000;
+  text-align: center;
   user-select: none;
+}
+.btn:hover {
+  background-color: #e0e0e0;
 }
 .check {
   margin: 2rem auto;
+  font-size: 2.4rem;
+  padding: 1.2rem 0;
+  width: 14rem;
+}
+.restart {
+  font-size: 2.4rem;
+  padding: 1.2rem 0;
+  width: 14rem;
 }
 .right {
   width: 60%;
@@ -155,6 +164,7 @@ section {
   margin: 1rem;
   display: inline-block;
   text-align: center;
+  white-space: nowrap;
 }
 @media screen and (max-width: 768px) {
   html {
@@ -171,11 +181,14 @@ section {
     width: 12rem;
     padding: 1.5rem 0;
   }
-  .right-block {
-    width: 90%;
+  .left {
+    width: 50%;
+  }
+  .right {
+    width: 50%;
   }
   .item-block {
-    font-size: 2.5rem;
+    font-size: 2.4rem;
     padding: 1rem;
   }
   .number {

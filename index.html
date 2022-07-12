@@ -19,7 +19,7 @@
       </p>
     </header>
     <main>
-      <button class="play"><i class="fas fa-caret-right"></i>Play !!</button>
+      <span class="btn play"><i class="fas fa-caret-right"></i>Play !!</span>
       <section class="left" style="display: none">
         <div class="input-box">
           <div class="number-box">
@@ -62,31 +62,31 @@
             oninput="if(value.length > 4)value=value.slice(0,4);if(value<0)value=0 "
           />
           <div class="key-box" id="box">
-            <button onclick="inputNumber(this)" class="key" id="one">1</button>
-            <button onclick="inputNumber(this)" class="key" id="two">2</button>
-            <button onclick="inputNumber(this)" class="key" id="three">
+            <span onclick="inputNumber(this)" class="btn key" id="one">1</span>
+            <span onclick="inputNumber(this)" class="btn key" id="two">2</span>
+            <span onclick="inputNumber(this)" class="btn key" id="three">
               3
-            </button>
-            <button onclick="inputNumber(this)" class="key" id="four">4</button>
-            <button onclick="inputNumber(this)" class="key" id="five">5</button>
-            <button onclick="inputNumber(this)" class="key" id="six">6</button>
-            <button onclick="inputNumber(this)" class="key" id="seven">
+            </span>
+            <span onclick="inputNumber(this)" class="btn key" id="four">4</span>
+            <span onclick="inputNumber(this)" class="btn key" id="five">5</span>
+            <span onclick="inputNumber(this)" class="btn key" id="six">6</span>
+            <span onclick="inputNumber(this)" class="btn key" id="seven">
               7
-            </button>
-            <button onclick="inputNumber(this)" class="key" id="eight">
+            </span>
+            <span onclick="inputNumber(this)" class="btn key" id="eight">
               8
-            </button>
-            <button onclick="inputNumber(this)" class="key" id="nine">9</button>
-            <button onclick="inputNumber(this)" class="key" id="re">
+            </span>
+            <span onclick="inputNumber(this)" class="btn key" id="nine">9</span>
+            <span onclick="inputNumber(this)" class="btn key" id="re">
               <i class="fas fa-redo"></i>
-            </button>
-            <button onclick="inputNumber(this)" class="key" id="zero">0</button>
-            <button onclick="inputNumber(this)" class="key" id="backspace">
+            </span>
+            <span onclick="inputNumber(this)" class="btn key" id="zero">0</span>
+            <span onclick="inputNumber(this)" class="btn key" id="backspace">
               <i class="fas fa-backspace"></i>
-            </button>
+            </span>
           </div>
-          <button class="btn check">Check!</button>
-          <button class="btn restart">Restart</button>
+          <span class="btn check">Check!</span>
+          <span class="btn restart">Restart</span>
         </div>
       </section>
       <section class="right" style="display: none">
